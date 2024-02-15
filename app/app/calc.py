@@ -1,11 +1,12 @@
 # """
 # Calc functions
 # """
+
 def add(x, y):
-    # add x and y 
+    """Add two numbers together"""
     return x + y
 
+
 def subtract(x, y):
-    # subtract x and y
+    """Subtract two numbers"""
     return x - y
-    
