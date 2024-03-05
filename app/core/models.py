@@ -1,10 +1,11 @@
-# database models 
+# database models
 from django.db import models
 from django.contrib.auth.models import (
     AbstractBaseUser,
     BaseUserManager,
     PermissionsMixin,
 )
+
 
 class UserManager(BaseUserManager):
     # manager for users
@@ -19,7 +20,7 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractBaseUser, PermissionsMixin):
-    # user in the system 
+    # user in the system
     email = models.EmailField(max_length=255, unique=True)
     name = models.CharField(max_length=255)
     is_active = models.BooleanField(default=True)
